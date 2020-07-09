@@ -14,7 +14,7 @@
     "ejs": "^2.6.1",
     "express": "^4.16.4",
     "jsonwebtoken": "^8.4.0",
-    "mongoose": "^5.4.7",
+    "mongoose": "^5.7.5",
     "request": "^2.88.0"
   }
 }
