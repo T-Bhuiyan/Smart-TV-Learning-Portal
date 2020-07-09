@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Register / Login</title>
+    <link rel="stylesheet" type="text/css" href="/index.css">
+</head>
+<body>
+    <div class="divGraphic">
+        <div id="login-box">
+            <div class="left">
+                <form action="/sign_up" method="post">
+                    <h1>Sign up</h1>
+
+                    <input type="text"      name="username"     id="name"       placeholder="Username" />
+                    <input type="text"      name="email"        id="email"      placeholder="E-mail" />
+                    <input type="password"  name="password"     id="password"   placeholder="Password" />
+                    <input type="password"  name="password2"                    placeholder="Retype password" />
+
+                    <input type="submit"    name="signup_submit"    value="Sign me up" />
+                </form>
+            </div>
+
+            <div class="right">
+                <form action="/login" method="post">
+                    <span class="loginwith">Sign in with<br />username</span>
+
+                    <input type="text"      name="username_login"   id="username"           placeholder="Username" />
+                    <input type="password"  name="password_login"   id="password_login"     placeholder="Password" />
+                    <input type="submit"    name="login_submit"     value="LOGIN" />
+                </form>
+            </div>
+            <div class="or">OR</div>
+        </div>
+    </div>
+</body>
+</html>

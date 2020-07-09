@@ -1,0 +1,63 @@
+
+// ---------------------------------------------------------------------------------------
+// Login
+// Find user in db, create token, send back rendered HTML + token to user
+
+app.post("/login", function(req, res){
+
+    var reqName     = req.body.username_login;
+    var reqPass     = req.body.password_login;
+
+    // login validation process
+    User.findOne({name:reqName}, function(searchErr, searchRes){
+        
+        // console.log("you search for: " + reqName);
+        // console.log("your result is: " + searchRes);
+
+        // if error
+        if(searchErr){
+            console.log("hmm looks like error");
+            console.log(searchErr);
+        } 
+
+        // if nothing found
+        if (searchRes == null) {
+            errorMessage = "Authentication failed. User not found.";
+            console.log(errorMessage);
+            return res.render("errorPage.ejs", {errorMessage: errorMessage});
+        }
+               
+        // if found......bad logic but ok....
+        if (searchRes.name == reqName) {
+
+                // check if the password correct
+                if (searchRes.password != reqPass) {
+                    errorMessage = "Authentication failed. Wrong password.";
+                    return res.render("errorPage.ejs", {errorMessage: errorMessage});
+                }
+            
+            // login validation succes
+            loginResult = true;
+            
+            const tokenPayload  = {
+                name: reqName,
+                pass: reqPass
+            };
+            const token         = jwt.sign({tokenPayload}, "lti_SecretKey");
+    
+            // return res.json({
+            //     token: 'token'
+            // })
+
+            return res.render("errorPage.ejs", {errorMessage: token});
+            
+        }    
+
+    });
+
+    
+    
+
+});
+
+// ---------------------------------------------------------------------------------------
