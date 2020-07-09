@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Quizzes</title>
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,800" rel="stylesheet">
+<!-- <link rel="stylesheet" type="text/css" href="css/style.css"/> -->
+<link rel="stylesheet" type="text/css" href="css/quiz.css"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0"/>
+<meta name="description" content="Input Device Test"/>
+</head>
+<body onload="retrieveQuestion('1')">
+	<div class="divGraphicQuiz">
+		<h1>Simple Quiz</h1>
+		<div id="quiz">
+			<h3 id="question"></h3>
+			<button class="fbutton column" id="0" value="0"></button>
+			<button class="fbutton column" id="1" value="1"></button>
+			<button class="fbutton column" id="2" value="2"></button>
+			<button class="fbutton column" id="3" value="3" ></button>
+<!-- 			<button onclick="help()" ></button> -->
+			<footer>
+				<p><span id="progress"></span><span id="score"></span></p>
+				<button onclick="retrieveQuestion('2')" >Next</button>
+			</footer>
+		</div>
+	</div>
+	<script type="text/javascript" src="js/quiz.js"></script>
+	
+</body>
+</html>

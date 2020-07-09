@@ -1,0 +1,151 @@
+@font-face {
+    font-family: BreezeBold;
+    src: url(../fonts/BreezeSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: BreezeLight;
+    src: url(../fonts/BreezeSans-Light.ttf);
+}
+
+body {
+    margin: 0;
+    font-family: BreezeLight;
+    font-weight: bold;
+    color: white;
+    background-color: #444;
+}
+
+#application {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.nav ul {
+    list-style: none;
+    text-align: center;
+    padding: 0;
+    margin: 0;
+    -webkit-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 14px 0px rgba(0,0,0,0.75);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+
+}
+.nav li {
+    font-family: 'Oswald', sans-serif;
+    font-size: 1.2em;
+    line-height: 40px;
+    height: 40px;
+    /*border-bottom: 1px solid #888;*/
+    display: inline-block;
+    margin: 20px;
+    border-bottom: none;
+}
+
+.nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: .3s background-color;
+    display: inline;
+}
+
+.nav a:hover {
+    background-color: #005f5f;
+}
+
+.nav a.active {
+    background-color: #fff;
+    color: #444;
+    cursor: default;
+}
+
+
+.divGraphic{
+    left: 0px;
+    top: 0px;
+    width: 1280px;
+    height: 720px;
+    position:absolute;
+    z-index:1;
+    background-color: #444;
+    text-align:center;
+}
+
+#login-box {
+    position: relative;
+    margin: 5% auto;
+    width: 1000px;
+    height: 800px;
+    border-radius: 2px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    text-align:center;
+}
+
+form {  
+  margin: auto auto;
+  display:block;
+}
+
+input[type="submit"] 
+{
+  font-weight: bold;
+  padding: 20px 80px;
+  border:1px solid #888;
+  cursor: pointer;
+  background: #2b90d9;
+  color: white;
+  font-size:3.0em;
+  display: block;
+   margin: 20px auto;
+}
+
+input[type="tel"] {
+
+  height: 60px;
+  font-size:2.2em;
+}
+
+input[type="tel"]:focus {
+  border: 1px solid blue;
+}
+
+input[type="button"] {
+
+  height: 100px;
+  font-size:2.2em;
+  color: black;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  
+  border: none;
+}
+
+.column {
+/*   float: left; */
+  width: 14.33%;
+  height: 60px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+#kata{
+	font-weight:bold;
+	font-size:100px;
+	color:white;
+}
+
+button{
+	
+}

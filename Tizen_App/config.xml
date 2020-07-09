@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<widget xmlns:tizen="http://tizen.org/ns/widgets" xmlns="http://www.w3.org/ns/widgets" id="http://yourdomain/ltiUI" version="1.0.0" viewmodes="fullscreen">
+    <tizen:application id="Zt8PwMIJuH.ltiUI" package="Zt8PwMIJuH" required_version="3.0" launch_mode="single"/>
+    <content src="home.html"/>
+    <feature name="http://tizen.org/feature/screen.size.all"/>
+    <feature name="http://tizen.org/feature/tv.audio"/>
+    <feature name="http://tizen.org/feature/tv.display"/>
+    <feature name="http://tizen.org/feature/tv.inputdevice"/>
+    <icon src="latihan.png"/>
+    <name>ltiUI</name>
+    <tizen:privilege name="http://tizen.org/privilege/internet"/>
+    <tizen:privilege name="http://tizen.org/privilege/fullscreen"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.audio"/>
+    <tizen:privilege name="http://tizen.org/privilege/tv.inputdevice"/>
+    <tizen:profile name="tv"/>
+    <tizen:setting screen-orientation="landscape" context-menu="enable" background-support="disable" encryption="disable" install-location="auto" hwkey-event="disable"/>
+</widget>
